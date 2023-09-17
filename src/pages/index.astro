@@ -1,0 +1,389 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Xbox Wireless Controller">
+		<header id="header">
+			<a class="home-link" href="#"><img id="header-img" src="https://img-prod-cms-rt-microsoft-com.akamaized.net//cms/api/am/imageFileData/RW8TP2?ver=d2e0"/></a>
+	  
+			<nav id="nav-bar">
+			  <ul>
+				<li><a class="nav-link" href="#resumen">Resumen</a></li>
+				<li><a class="nav-link" href="#galeria">Galeria</a></li>
+				<li><a class="nav-link" href="#detalles">Detalles</a></li>
+			  </ul>
+			</nav>
+		  </header>
+		  
+		  <main>
+			<section id="intro">
+			  <iframe id="video" src="https://www.youtube.com/embed/94J_KuMeIUQ?controls=0&amp;start=1&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</section>
+	  
+			<section id="resumen">
+			  <figure class="resumen-fig"><img class="resumen-img" src="https://images.unsplash.com/photo-1600861194942-f883de0dfe96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" loading="lazy"/></figure>
+	  
+			  <p>¡El control de Xbox Series S es la puerta de entrada a una experiencia de juego de próxima generación! Diseñado para brindar comodidad y precisión, este control inalámbrico te permitirá sumergirte en tus juegos favoritos como nunca antes. Con su diseño ergonómico y textura antideslizante, disfrutarás de largas sesiones de juego sin cansarte.</p>
+			</section>
+	  
+	  
+			<section id="galeria">
+			  <div class="container">
+				<figure id="figure1">
+				  <a href="#figure2" class="button next">></a>
+				  <img class="img1" src="https://assets.xboxservices.com/assets/55/83/55836945-e141-4d47-9dad-21d902948816.jpg?n=111101_Gallery-0_1_1350x759.jpg">
+				  <a href="#figure4" class="button prev"><</a>
+				</figure>
+	  
+				<figure id="figure2">
+				  <img  src="https://assets.xboxservices.com/assets/ef/01/ef018f9e-e135-435b-8439-9a4be7ba2f09.jpg?n=111101_Gallery-0_8_1350x759.jpg">
+				  <a href="#figure3" class="button next">></a>
+				  <a href="#figure1" class="button prev"><</a>
+				</figure>
+	  
+				<figure id="figure3">
+				  <a href="#figure4" class="button next">></a>
+				  <img src="https://assets.xboxservices.com/assets/fb/a4/fba4b1b3-a093-44f7-afe3-548783279992.jpg?n=111101_Gallery-0_23_1350x759.jpg">
+				  <a href="#figure2" class="button prev"><</a>
+				</figure>
+	  
+				<figure id="figure4">
+				  <a href="#figure1" class="button next">></a>
+				  <img  src="https://assets.xboxservices.com/assets/1c/e7/1ce760ed-d588-4976-baa9-cbabe583436b.jpg?n=111101_Gallery-0_29_1350x759.jpg">
+				  <a href="#figure3" class="button prev"><</a>
+	  
+				</figure>
+			  </div>
+			</section>
+	  
+			<section id="detalles">
+			  <table>
+				<tr>
+				  <th colspan="4">Detalles Tecnicos</th>
+				</tr>
+				<tr>
+				  <th>Conectividad</th>
+				  <td>Conéctate a consolas Xbox con Xbox Wireless. Conéctate de forma inalámbrica a PCs con Windows 10/11, tablets, iOS y Android mediante Bluetooth.*
+	  </td>            
+				  <th>Compativilidad</th>
+				  <td>Compatible con Xbox Series X, Xbox Series S, Xbox One, Windows 10/11, Android e iOS.*</td>
+				</tr>
+				<tr>
+				  <td></td>
+				  <td></td>
+				  <th>Bateria</th>
+				  <td>Utiliza baterías AA para hasta 40 horas de duración de la batería.***</td>
+				</tr>
+			  </table>
+			</section>
+	  
+			<footer>
+			  <img src="https://i.blogs.es/4786de/mejores-juyegos-game-pass/1366_2000.webp" />
+			  <form id="form" action="https://formsubmit.co/freddyltacuri@gmail.com" method="POST">
+				<img class="logo" src="https://assets.xboxservices.com/assets/d4/04/d404237d-aac3-4fb5-9e00-3c3d3726a6d5.svg?n=XGP-Cross-sell_Page-Hero_logo_279x48.svg"/>
+				<h3>Suscribete para recibir las noticias mas recientes!</h3>
+				<input id="email" name="email" type="email"  placeholder="Ingresa tu correo" required/>
+				<input id="submit" type="submit" value="Suscribete" />
+			  </form>
+			</footer>
+		  </main>
+</Layout>
+
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(
+    #107c10 10%,
+    #fff 10%
+	);
+}
+
+#header {
+  background-color: #107c10aa;
+  background: linear-gradient(
+    #107c10 50%,
+    transparent 90%
+  );
+  height: 12vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  z-index: 10;
+}
+#header-img{
+  height: 3em;  
+  padding: 1em;
+  margin: 0 2em;
+}
+#nav-bar {
+  padding-top: 1.5em;
+  position: stiky;
+}
+#header ul {
+  list-style: none;
+  display: flex;
+  gap: 3em;
+  margin-right: 2em;
+  font-size: 1.2em;
+}
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 0.29em;
+  transition: 100ms;
+}
+.nav-link:hover {
+  border-radius: 3px;
+  border-bottom: 3px solid #fff;
+  transition: 100ms;
+  text-shadow: 0px 8px 30px rgb(255, 255, 255);
+  }
+
+main {
+  display: grid;
+}
+#intro{
+  height: 55vw;
+  display: flex;
+  justify-content: center;
+}
+#video {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#resumen {
+  display: grid;
+  place-items: center;
+  gap: 1em;
+  height: 100vh;
+  background: linear-gradient(
+    black 10%,
+    #fff 40%
+  );
+}
+.resumen-fig {
+  width: 50vw;
+}
+.resumen-img {
+  margin-left: 2em;
+  width: 60vw;
+  height: 80vh;
+  object-fit: none;
+  object-position: 65% 90%;
+}
+#resumen p {
+  grid-column: 2;
+  margin: 0 6vw 5em 0; 
+  width: 100%;
+  background-color: #2f2f2f;
+  color: #fff;
+  padding: 1em;
+  font-size: 1.4vw;
+}
+
+#galeria {
+  height: 110vh; 
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.container {
+  display: flex;
+}
+.container img {
+  width: 100%; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button {
+  background-color: #2f2f2f;
+  border: 2px solid #afafaf;
+  color: #afafaf;
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  top: 45%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  z-index: 1;
+  transition: 300ms;
+}
+.button:hover {
+  background-color: #afafaf;
+  border: 2px solid #2f2f2f;
+  color: #2f2f2f;
+  scale: 1.5;
+  transition: 300ms;
+}
+.next {
+  right: 2%;
+}
+.prev {
+  left: 2%;
+}
+#figure1:target, #figure2:target, #figure3:target, #figure4:target{
+  opacity: 1;
+  transition: 400ms;
+
+}
+#figure2:not(:target), #figure3:not(:target), #figure4:not(:target){
+  opacity: 0;
+  transition: 600ms;
+
+}
+
+#detalles {
+  padding: 9em 0;
+  height: 80vh;
+  display: flex; 
+  place-items: start;
+  background: linear-gradient(
+    #fff 70%,
+    black 95%
+  );
+}
+table {
+  padding: 0 4vw 4vw 4vw;
+  text-align: left;
+}
+table td, table th {
+  vertical-align: top;
+  border-bottom: 1px solid #bfbfbf;
+  padding: 0.9em;
+}
+table th {
+  padding: 0.9em 0.9em 0em 0.9em;
+}
+table tr:first-child th {
+  padding: 0 0 1em 0.5em;
+  font-size: 2em;
+  border-bottom: none;
+}
+table tr:last-child td:first-child,
+table tr:last-child td:nth-child(2) {
+  border: none;
+}
+
+footer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+footer img{
+  width: 100%;
+}
+#form {
+  position: absolute;
+  background-color: #2f2f2fbf;
+  width: 100%;
+  height: 40vh;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+form .logo {
+  height: 5vh;
+}
+form h3 {
+  color: #fff;
+}
+footer input {
+  padding: 0.2em; 
+  border: 2px outset #2f2f2f;
+  border-radius: 5px;
+  font-size: 0.95em;
+  text-align: center;
+}
+#submit {
+  padding: 0.5em 2.4em;
+  background-color: #107c10;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em; 
+  transition: 300ms;
+}
+#submit:hover {
+  background-color: #fff;
+  color: #107c10;
+  border: 2px inset #2f2f2f;
+  transition: 300ms;
+}
+
+@media only screen and (max-width: 900px) {
+  #header {
+    background: linear-gradient(
+      #107c10 85%,
+      transparent 99%
+    );
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    padding-bottom: 2.5em;
+  }
+  #header-img{
+    padding: 0.6em;
+  }
+  #nav-bar {
+    padding-top: 0;
+  }
+  #resumen {
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    place-items: center;
+    padding: 10em 0 4em 0; 
+  }
+  .resumen-fig {
+    width: 100%;
+  }
+  #resumen p {
+    position: absolute;
+    top: 27%;
+    left: 34%;
+    width: 60%;
+    background-color: #2f2f2f;
+    color: #fff;
+    padding: 1em;
+    font-size: 1.6vw;
+  }
+  .resumen-img {
+    width: 80%;
+    height: auto;
+    margin-left: 0;
+    object-fit: none;
+    object-position: 65% 90%;
+  }
+  #detalles {
+    padding: 9em 0 30vw 0;
+  }
+  table {
+    padding: 0;
+  }
+}
+</style>
